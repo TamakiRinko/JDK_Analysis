@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\LocalRepository_3.6.1" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hdebfA3Z8nBr3yicu5YfnP3Zkh" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jdk_13_src" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JDK_Analysis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\TamakiRinko\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="" />
+      <created>1600342850659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600342850659</updated>
+      <workItem from="1600342853169" duration="268000" />
+      <workItem from="1600343157999" duration="1798000" />
+      <workItem from="1600345472656" duration="55000" />
+      <workItem from="1600345538140" duration="42000" />
+      <workItem from="1600345590704" duration="39000" />
+      <workItem from="1600345643181" duration="78000" />
+      <workItem from="1600345731972" duration="477000" />
+      <workItem from="1600346613633" duration="1149000" />
+      <workItem from="1600349938214" duration="1179000" />
+      <workItem from="1601463328370" duration="2997000" />
+      <workItem from="1602722630143" duration="14000" />
+      <workItem from="1603507469820" duration="257000" />
+      <workItem from="1604666469658" duration="2288000" />
+      <workItem from="1604670615281" duration="239000" />
+      <workItem from="1604670864725" duration="193000" />
+      <workItem from="1604671164796" duration="65000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="186" key="#项目结构" timestamp="1600346791699">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
+    <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604671192347">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="730" y="310" key="DetectedRootsChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604671192347" />
+    <state x="763" y="350" key="FileChooserDialogImpl" timestamp="1604671190599">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604671190599" />
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1604670853768">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1604670853768">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1604670853768">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1604670853768">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
+    <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
+    <state x="463" y="170" key="SettingsEditor" timestamp="1604671193209">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604671193209" />
+    <state x="654" y="280" width="749" height="490" key="find.popup" timestamp="1600347007526">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="654" y="280" width="749" height="490" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600347007526" />
+    <state x="334" y="229" key="new project wizard" timestamp="1603507723757">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1603507723757" />
+  </component>
+</project>
