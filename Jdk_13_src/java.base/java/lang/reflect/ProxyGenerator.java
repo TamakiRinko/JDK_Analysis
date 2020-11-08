@@ -335,8 +335,10 @@ class ProxyGenerator {
                                      int accessFlags)
     {
         ProxyGenerator gen = new ProxyGenerator(name, interfaces, accessFlags);
+        // 实际生成
         final byte[] classFile = gen.generateClassFile();
-
+        // 若System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles", true);则生成Proxy文件
+        // 否则只在内存中生成
         if (saveGeneratedFiles) {
             java.security.AccessController.doPrivileged(
             new java.security.PrivilegedAction<Void>() {
@@ -437,6 +439,7 @@ class ProxyGenerator {
          * java.lang.Object take precedence over duplicate methods in the
          * proxy interfaces.
          */
+        // 加入hashCode, equals, toString方法到proxyMethods中
         addProxyMethod(hashCodeMethod, Object.class);
         addProxyMethod(equalsMethod, Object.class);
         addProxyMethod(toStringMethod, Object.class);
@@ -446,6 +449,7 @@ class ProxyGenerator {
          * earlier interfaces precedence over later ones with duplicate
          * methods.
          */
+        // 添加所有接口方法
         for (Class<?> intf : interfaces) {
             for (Method m : intf.getMethods()) {
                 if (!Modifier.isStatic(m.getModifiers())) {
@@ -466,9 +470,11 @@ class ProxyGenerator {
          * Step 2: Assemble FieldInfo and MethodInfo structs for all of
          * fields and methods in the class we are generating.
          */
+        // 按照实际class文件中的组织结构，组装域信息和方法信息
         try {
+            // 构造器信息
             methods.add(generateConstructor());
-
+            // 接口方法和三个基础方法
             for (List<ProxyMethod> sigmethods : proxyMethods.values()) {
                 for (ProxyMethod pm : sigmethods) {
 
@@ -481,7 +487,7 @@ class ProxyGenerator {
                     methods.add(pm.generateMethod());
                 }
             }
-
+            //静态方法信息
             methods.add(generateStaticInitializer());
 
         } catch (IOException e) {
@@ -494,7 +500,7 @@ class ProxyGenerator {
         if (fields.size() > 65535) {
             throw new IllegalArgumentException("field limit exceeded");
         }
-
+        // 开始写入文件
         /* ============================================================
          * Step 3: Write the final class file.
          */
@@ -585,11 +591,12 @@ class ProxyGenerator {
      * set of duplicate methods.
      */
     private void addProxyMethod(Method m, Class<?> fromClass) {
+        // 利用反射，获取方法番薯，返回值等
         String name = m.getName();
         Class<?>[] parameterTypes = m.getParameterTypes();
         Class<?> returnType = m.getReturnType();
         Class<?>[] exceptionTypes = m.getExceptionTypes();
-
+        //获得方法签名
         String sig = name + getParameterDescriptors(parameterTypes);
         List<ProxyMethod> sigmethods = proxyMethods.get(sig);
         if (sigmethods != null) {
@@ -601,6 +608,7 @@ class ProxyGenerator {
                      * compatibly with the throws clauses of both
                      * overridden methods.
                      */
+                    // 新的满足的方法，并合Exception类型
                     List<Class<?>> legalExceptions = new ArrayList<>();
                     collectCompatibleTypes(
                         exceptionTypes, pm.exceptionTypes, legalExceptions);
@@ -613,9 +621,11 @@ class ProxyGenerator {
                 }
             }
         } else {
+            // 新的方法
             sigmethods = new ArrayList<>(3);
             proxyMethods.put(sig, sigmethods);
         }
+        // 加入该方法
         sigmethods.add(new ProxyMethod(name, parameterTypes, returnType,
                                        exceptionTypes, fromClass));
     }
@@ -780,6 +790,7 @@ class ProxyGenerator {
      * in the class being generated.  This class mirrors the data items of
      * the "method_info" structure of the class file format (see JVMS 4.6).
      */
+    // 方法信息，write方法严格按照class文件格式写入这些信息
     private class MethodInfo {
         public int accessFlags;
         public String name;

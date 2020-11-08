@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="" />
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/CglibTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK_Analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JDK_Analysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/reflect/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/reflect/Proxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/reflect/ProxyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/reflect/ProxyGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,11 +31,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
@@ -36,6 +56,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1hdebfA3Z8nBr3yicu5YfnP3Zkh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -45,17 +68,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jdk_13_src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cglib-RELEASE_3_3_0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
   </component>
   <component name="RunManager">
+    <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proxy.CglibTest" />
+      <module name="JDK_Analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="JDK_Analysis" />
@@ -63,8 +100,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proxy.Main" />
+      <module name="JDK_Analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CglibTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -95,6 +147,10 @@
       <workItem from="1604670615281" duration="239000" />
       <workItem from="1604670864725" duration="193000" />
       <workItem from="1604671164796" duration="65000" />
+      <workItem from="1604713409307" duration="702000" />
+      <workItem from="1604818187582" duration="5531000" />
+      <workItem from="1604825734417" duration="609000" />
+      <workItem from="1604826355085" duration="4360000" />
     </task>
     <servers />
   </component>
@@ -102,49 +158,65 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="582" y="206" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604823943817">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="582" y="206" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604823943817" />
+    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1604827903162">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604827903162" />
+    <state x="389" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604830585970">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="389" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604830585970" />
     <state x="552" y="186" key="#项目结构" timestamp="1600346791699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604671192347">
+    <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="730" y="310" key="DetectedRootsChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604671192347" />
-    <state x="763" y="350" key="FileChooserDialogImpl" timestamp="1604671190599">
+    <state x="730" y="310" key="DetectedRootsChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604827895587" />
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1604818358075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604671190599" />
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1604670853768">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604818358075" />
+    <state x="763" y="350" key="FileChooserDialogImpl" timestamp="1604827894572">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
-    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1604670853768">
+    <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604827894572" />
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1604830909898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
-    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1604670853768">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604830909898" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1604830909898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
-    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1604670853768">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604830909898" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1604830909898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604670853768" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604830909898" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1604830909898">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604830909898" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="463" y="170" key="SettingsEditor" timestamp="1604671193209">
+    <state x="463" y="170" key="SettingsEditor" timestamp="1604827906037">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604671193209" />
+    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604827906037" />
     <state x="654" y="280" width="749" height="490" key="find.popup" timestamp="1600347007526">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="654" y="280" width="749" height="490" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600347007526" />
-    <state x="334" y="229" key="new project wizard" timestamp="1603507723757">
+    <state x="334" y="229" key="new project wizard" timestamp="1604827461992">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1603507723757" />
+    <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1604827461992" />
   </component>
 </project>

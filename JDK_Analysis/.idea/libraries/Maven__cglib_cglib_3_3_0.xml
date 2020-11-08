@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Maven: cglib:cglib:3.3.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.3.0/cglib-3.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.3.0/cglib-3.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib-integration-test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib-jmh/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib-sample/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

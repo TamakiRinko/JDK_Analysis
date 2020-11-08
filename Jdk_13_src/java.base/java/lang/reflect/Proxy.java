@@ -409,6 +409,7 @@ public class Proxy implements java.io.Serializable {
             if (caller != null) {
                 checkProxyAccess(caller, loader, intf);
             }
+            // 有就从cache中拿，否则生成一个新的
             return proxyCache.sub(intf).computeIfAbsent(
                 loader,
                 (ld, clv) -> new ProxyBuilder(ld, clv.key()).build()
@@ -531,6 +532,7 @@ public class Proxy implements java.io.Serializable {
             /*
              * Generate the specified proxy class.
              */
+            // 实际生成字节码文件
             byte[] proxyClassFile = ProxyGenerator.generateProxyClass(
                     proxyName, interfaces.toArray(EMPTY_CLASS_ARRAY), accessFlags);
             try {
@@ -643,6 +645,7 @@ public class Proxy implements java.io.Serializable {
          * before calling this.
          */
         Constructor<?> build() {
+            // 生成ProxyClass
             Class<?> proxyClass = defineProxyClass(module, interfaces);
             final Constructor<?> cons;
             try {
@@ -1001,6 +1004,7 @@ public class Proxy implements java.io.Serializable {
         /*
          * Look up or generate the designated proxy class and its constructor.
          */
+        // 获取构造器
         Constructor<?> cons = getProxyConstructor(caller, loader, interfaces);
 
         return newProxyInstance(caller, cons, h);
