@@ -570,14 +570,14 @@ abstract class ReferencePipeline<P_IN, P_OUT>
         if (isParallel()
                 && (collector.characteristics().contains(Collector.Characteristics.CONCURRENT))
                 && (!isOrdered() || collector.characteristics().contains(Collector.Characteristics.UNORDERED))) {
-            container = collector.supplier().get();
-            BiConsumer<A, ? super P_OUT> accumulator = collector.accumulator();
-            forEach(u -> accumulator.accept(container, u));
+            container = collector.supplier().get();              // 拿到结果容器
+            BiConsumer<A, ? super P_OUT> accumulator = collector.accumulator();     // 拿到accumulator
+            forEach(u -> accumulator.accept(container, u));      // forEach中进行evaluate操作，调用accumulator进行合并
         }
         else {
             container = evaluate(ReduceOps.makeRef(collector));
         }
-        return collector.characteristics().contains(Collector.Characteristics.IDENTITY_FINISH)
+        return collector.characteristics().contains(Collector.Characteristics.IDENTITY_FINISH)  // 有没有finish操作
                ? (R) container
                : collector.finisher().apply(container);
     }

@@ -258,6 +258,7 @@ public final class Collectors {
      */
     public static <T, C extends Collection<T>>
     Collector<T, ?, C> toCollection(Supplier<C> collectionFactory) {
+        // 用给出的Supplier提供容器，进行默认的添加(accumulator)和合并(combiner)操作，且无finish操作
         return new CollectorImpl<>(collectionFactory, Collection<T>::add,
                                    (r1, r2) -> { r1.addAll(r2); return r1; },
                                    CH_ID);
@@ -275,6 +276,13 @@ public final class Collectors {
      */
     public static <T>
     Collector<T, ?, List<T>> toList() {
+        // Supplier: ArrayList::new，返回一个ArrayList容器
+        // Accumulator: List::add，BiConsumer<A, T>类型，理解为a.add(b)
+        //              第一个参数为调用者也即上述ArrayList容器，第二个参数为add的函数参数，也即流中的对象
+        //              该操作完成将流中的对象加入到ArrayList容器的操作
+        // Combiner: (left, right) -> { left.addAll(right); return left; }，BiConsumer<T>类型
+        //            left和right参数类型一致，多线程时多个ArrayList合并
+        // CH_ID: IDENTITY_FINISH，不执行finisher
         return new CollectorImpl<>((Supplier<List<T>>) ArrayList::new, List::add,
                                    (left, right) -> { left.addAll(right); return left; },
                                    CH_ID);
@@ -616,6 +624,7 @@ public final class Collectors {
      */
     public static <T> Collector<T, ?, Long>
     counting() {
+        // 对流中每个元素，count+1
         return summingLong(e -> 1L);
     }
 
@@ -972,9 +981,14 @@ public final class Collectors {
                                 Function<? super T, ? extends U> mapper,
                                 BinaryOperator<U> op) {
         return new CollectorImpl<>(
+                // Supplier: 利用identity提供初始Supplier：return () -> (T[]) new Object[] { identity };
                 boxSupplier(identity),
+                // Accumulator: 提供了一个mapper，将流里的每个值t映射为mapper中对应的值m，并用m和a进行op操作
                 (a, t) -> { a[0] = op.apply(a[0], mapper.apply(t)); },
+                // Combiner: 并发时对多个线程中的结果进行op操作
                 (a, b) -> { a[0] = op.apply(a[0], b[0]); return a; },
+                // Finisher: 结束时数据整合？
+                // CH_NOID: Collections.emptySet()，需要进行finish操作
                 a -> a[0], CH_NOID);
     }
 

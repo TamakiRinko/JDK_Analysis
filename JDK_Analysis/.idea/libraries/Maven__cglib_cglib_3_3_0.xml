@@ -12,6 +12,7 @@
       <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib-sample/src/main/java" />
       <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib/src/main/java" />
       <root url="file://$PROJECT_DIR$/../cglib-RELEASE_3_3_0/cglib/src/test/java" />
+      <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.3.0/cglib-3.3.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
