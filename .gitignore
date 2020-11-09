@@ -1,5 +1,5 @@
 ##ignore this file##
-*/out/
-*/target/
+JDK_Analysis/out/
+JDK_Analysis/target/
 
-*/.idea/
+JDK_Analysis/.idea/
