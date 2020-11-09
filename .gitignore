@@ -1,5 +1,5 @@
 ##ignore this file##
-out/
-target/
+*/out/
+*/target/
 
-.idea/
+*/.idea/
