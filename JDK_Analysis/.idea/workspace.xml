@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stream/CollectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/CollectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/Comparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/Comparator.java" afterDir="false" />
-    </list>
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="StreamExample Test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +60,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -200,12 +196,24 @@
       <workItem from="1604903558976" duration="7747000" />
       <workItem from="1604918503942" duration="6750000" />
       <workItem from="1604930233796" duration="9000" />
-      <workItem from="1604974300595" duration="4312000" />
+      <workItem from="1604974300595" duration="4678000" />
     </task>
+    <task id="LOCAL-00001" summary="StreamExample Test">
+      <created>1604980123673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604980123673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="StreamExample Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="StreamExample Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="283" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604903615596">
@@ -228,6 +236,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
+    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604980122806">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980122806" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -240,30 +252,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604827894572" />
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1604976552921">
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1604980153131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604976552921" />
-    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1604976552921">
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1604980153131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604976552921" />
-    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1604976552921">
+    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1604980153131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604976552921" />
-    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1604976552921">
+    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1604980153131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604976552921" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="463" y="170" key="SettingsEditor" timestamp="1604911851949">
+    <state x="463" y="170" key="SettingsEditor" timestamp="1604980356076">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604911851949" />
+    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604980356076" />
     <state x="654" y="280" width="749" height="490" key="find.popup" timestamp="1600347007526">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
