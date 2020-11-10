@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="StreamExample Test">
-      <change beforePath="$PROJECT_DIR$/src/main/java/stream/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/CglibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/CglibTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +43,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1hdebfA3Z8nBr3yicu5YfnP3Zkh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="新增" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -62,7 +61,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -70,7 +69,7 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ExampleTest">
+  <component name="RunManager" selected="Application.CglibTest">
     <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="proxy.CglibTest" />
       <module name="JDK_Analysis" />
@@ -143,24 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.ExampleTest" />
-        <item itemvalue="应用程序.CollectTest" />
-        <item itemvalue="应用程序.MethodReferenceTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -198,7 +192,9 @@
       <workItem from="1604903558976" duration="7747000" />
       <workItem from="1604918503942" duration="6750000" />
       <workItem from="1604930233796" duration="9000" />
-      <workItem from="1604974300595" duration="4993000" />
+      <workItem from="1604974300595" duration="6293000" />
+      <workItem from="1604987131082" duration="69000" />
+      <workItem from="1604987207367" duration="1981000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -221,13 +217,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604980549038</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stream Example Test">
+      <created>1604980687465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604980687465</updated>
+    </task>
+    <task id="LOCAL-00005" summary="StreamExample Test">
+      <created>1604980864808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604980864808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Stream Example Test" />
     <MESSAGE value="StreamExample Test" />
     <option name="LAST_COMMIT_MESSAGE" value="StreamExample Test" />
   </component>
@@ -252,10 +263,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604980657673">
+    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604980864113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980657673" />
+    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980864113" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -268,34 +279,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604827894572" />
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1604980153131">
+    <state width="938" height="234" key="GridCell.Tab.0.bottom" timestamp="1604981974654">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
-    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1604980153131">
+    <state width="938" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604981974654" />
+    <state width="938" height="234" key="GridCell.Tab.0.center" timestamp="1604981974654">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
-    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1604980153131">
+    <state width="938" height="234" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604981974654" />
+    <state width="938" height="234" key="GridCell.Tab.0.left" timestamp="1604981974654">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
-    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1604980153131">
+    <state width="938" height="234" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604981974654" />
+    <state width="938" height="234" key="GridCell.Tab.0.right" timestamp="1604981974654">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604980153131" />
+    <state width="938" height="234" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604981974654" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="463" y="170" key="SettingsEditor" timestamp="1604980364571">
+    <state x="463" y="170" key="SettingsEditor" timestamp="1604987583766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604980364571" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1604980669681">
+    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604987583766" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1604980888341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980669681" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980888341" />
+    <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604987300374">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1050@0.0.1920.1050" timestamp="1604987300374" />
     <state x="654" y="280" width="749" height="490" key="find.popup" timestamp="1600347007526">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -304,5 +319,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1604827461992" />
+    <state x="623" y="227" key="search.everywhere.popup" timestamp="1604981543243">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604981543243" />
   </component>
 </project>

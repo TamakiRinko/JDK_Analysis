@@ -4,6 +4,7 @@ import net.sf.cglib.core.DebuggingClassWriter;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
+import org.objectweb.asm.ClassWriter;
 
 import java.lang.reflect.Method;
 
