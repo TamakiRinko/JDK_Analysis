@@ -3,6 +3,7 @@ package stream;
 import methodreference.Person;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -10,10 +11,10 @@ import java.util.stream.Stream;
 
 public class CollectTest {
     public static void main(String[] args) {
-        List<Person> list = new ArrayList<>();
-        list.add(new Person(1, "a"));
-        list.add(new Person(2, "b"));
-        list.add(new Person(3, "c"));
+        List<Person> list = Arrays.asList(
+                new Person(1, "a"),
+                new Person(2, "b"),
+                new Person(3, "c"));
 
         String reduce = Stream.of("A", "is", "a", "dog").reduce("", String::concat);
 

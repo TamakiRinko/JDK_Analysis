@@ -465,6 +465,8 @@ public interface Comparator<T> {
             Function<? super T, ? extends U> keyExtractor)
     {
         Objects.requireNonNull(keyExtractor);
+        // 接收一个Function f，对流中每两个元素A，B应用f得到a，b
+        // 对a，b调用a.compareTo(b)
         return (Comparator<T> & Serializable)
             (c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2));
     }
