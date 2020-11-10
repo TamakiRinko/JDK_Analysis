@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Asynchronous CallBack Test">
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="FutureTask Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/CglibTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/CglibTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FutureTaskTest">
+  <component name="RunManager" selected="Application.CompletableFutureTest">
     <configuration name="CallBackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="callback.CallBackTest" />
       <module name="JDK_Analysis" />
@@ -86,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stream.ExampleTest" />
+    <configuration name="CompletableFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="future.CompletableFutureTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stream.*" />
+          <option name="PATTERN" value="future.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,19 +143,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CompletableFutureTest" />
         <item itemvalue="Application.FutureTaskTest" />
         <item itemvalue="Application.CallBackTest" />
       </list>
@@ -203,7 +191,8 @@
       <workItem from="1604987131082" duration="69000" />
       <workItem from="1604987207367" duration="1981000" />
       <workItem from="1604991512219" duration="82000" />
-      <workItem from="1604996880805" duration="4552000" />
+      <workItem from="1604996880805" duration="4650000" />
+      <workItem from="1605018161194" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -254,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604998877535</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FutureTask Test">
+      <created>1605001954679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605001954679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +261,8 @@
     <MESSAGE value="StreamExample Test" />
     <MESSAGE value="useless" />
     <MESSAGE value="Asynchronous CallBack Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Asynchronous CallBack Test" />
+    <MESSAGE value="FutureTask Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="FutureTask Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="283" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604903615596">
@@ -288,10 +285,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604998876592">
+    <state x="1063" y="112" key="CommitChangelistDialog2" timestamp="1605001953860">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604998876592" />
+    <state x="1063" y="112" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605001953860" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -304,22 +301,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604827894572" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1605001678884">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1605022612415">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605001678884" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1605001678884">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605022612415" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1605022612414">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605001678884" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1605001678883">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605022612414" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1605022612413">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605001678883" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1605001678884">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605022612413" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1605022612415">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605001678884" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605022612415" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -328,10 +325,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604998085063" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1604998879901">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605001957362">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604998879901" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605001957362" />
     <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604987300374">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
