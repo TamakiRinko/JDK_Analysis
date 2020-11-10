@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="StreamExample Test" />
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="StreamExample Test">
+      <change beforePath="$PROJECT_DIR$/src/main/java/stream/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +198,7 @@
       <workItem from="1604903558976" duration="7747000" />
       <workItem from="1604918503942" duration="6750000" />
       <workItem from="1604930233796" duration="9000" />
-      <workItem from="1604974300595" duration="4678000" />
+      <workItem from="1604974300595" duration="4993000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -205,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604980123673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="StreamExample Test">
+      <created>1604980479469</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604980479469</updated>
+    </task>
+    <task id="LOCAL-00003" summary="StreamExample Test">
+      <created>1604980549038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604980549038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,10 +252,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604980122806">
+    <state x="582" y="98" key="CommitChangelistDialog2" timestamp="1604980657673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980122806" />
+    <state x="582" y="98" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980657673" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -272,10 +288,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="463" y="170" key="SettingsEditor" timestamp="1604980356076">
+    <state x="463" y="170" key="SettingsEditor" timestamp="1604980364571">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604980356076" />
+    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604980364571" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1604980669681">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604980669681" />
     <state x="654" y="280" width="749" height="490" key="find.popup" timestamp="1600347007526">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
