@@ -178,6 +178,8 @@ public class AtomicInteger extends Number implements java.io.Serializable {
      * @return the previous value
      */
     public final int getAndIncrement() {
+        // U: Unsafe类，内部方法全是native方法，是底层实现！
+        // 该方法是利用CAS实现！在内存中修改值
         return U.getAndAddInt(this, VALUE, 1);
     }
 
