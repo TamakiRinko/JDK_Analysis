@@ -488,7 +488,7 @@ public final class Constructor<T> extends Executable {
     {
         if (checkAccess)
             checkAccess(caller, clazz, clazz, modifiers);
-
+        // 若为Enum，则直接抛出异常！
         if ((clazz.getModifiers() & Modifier.ENUM) != 0)
             throw new IllegalArgumentException("Cannot reflectively create enum objects");
 
