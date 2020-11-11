@@ -15,6 +15,8 @@ public class CompletableFutureTest {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
 //        test1();
         completeActionTest();
+//        convertTest();
+//        actionTest();
     }
 
     public static void test1() throws InterruptedException {
@@ -64,7 +66,7 @@ public class CompletableFutureTest {
         System.out.println("begin to start compute");
         long t = System.currentTimeMillis();
         try {
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(2);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -115,8 +117,49 @@ public class CompletableFutureTest {
         // public <U> CompletableFuture<U> handleAsync(BiFunction<? super T,Throwable,? extends U> fn)
         // public <U> CompletableFuture<U> handleAsync(BiFunction<? super T,Throwable,? extends U> fn, Executor executor)
         CompletableFuture<Integer> future3 = CompletableFuture.supplyAsync(CompletableFutureTest::getMoreData);
-        CompletableFuture<String> handle = future3.handle((t, e) -> "123");
+        CompletableFuture<String> handle = future3
+                // 有异常，无视，也算完成计算，继续向下
+                .handle((t, e) -> {int m = 5 / 0;return "123";})
+                .handle((t, e)->"456");
         System.out.println(handle.get());
     }
+    //---------------------------------------------------------------
+
+    public static void convertTest() throws ExecutionException, InterruptedException {
+        // public <U> CompletableFuture<U> thenApply(Function<? super T,? extends U> fn)
+        // public <U> CompletableFuture<U> thenApplyAsync(Function<? super T,? extends U> fn)
+        // public <U> CompletableFuture<U> thenApplyAsync(Function<? super T,? extends U> fn, Executor executor)
+        CompletableFuture<Integer> integerCompletableFuture = CompletableFuture.supplyAsync(() -> 100);
+        CompletableFuture<String> stringCompletableFuture = integerCompletableFuture.
+                thenApply(i -> i * 10 ).
+                thenApply(i -> i.toString() + "abc");
+        System.out.println(stringCompletableFuture.get());
+    }
+
+    //---------------------------------------------------------------
+
+    public static void actionTest() throws ExecutionException, InterruptedException {
+        // accept: consumer接口，使用之前的result，无返回值
+        // public CompletableFuture<Void> thenAccept(Consumer<? super T> action)
+        // public CompletableFuture<Void> thenAcceptAsync(Consumer<? super T> action)
+        // public CompletableFuture<Void> thenAcceptAsync(Consumer<? super T> action, Executor executor)
+
+        // run: runnable接口，不使用之前的result，也无返回值
+        // public CompletableFuture<Void> thenRun(Runnable action)
+        // public CompletableFuture<Void> thenRunAsync(Runnable action)
+        // public CompletableFuture<Void> thenRunAsync(Runnable action, Executor executor)
+
+        // public <U> CompletableFuture<Void> thenAcceptBoth(CompletionStage<? extends U> other, BiConsumer<? super T,? super U> action)
+        // public <U> CompletableFuture<Void> thenAcceptBothAsync(CompletionStage<? extends U> other, BiConsumer<? super T,? super U> action)
+        // public <U> CompletableFuture<Void> thenAcceptBothAsync(CompletionStage<? extends U> other, BiConsumer<? super T,? super U> action, Executor executor)
+        // public     CompletableFuture<Void> runAfterBoth(CompletionStage<?> other,  Runnable action)
+        CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> 100);
+        // x: 当前CompletableFuture的result；y: 第一个参数的CompletableFuture的result
+        CompletableFuture<Void> f =  future.thenAcceptBoth(
+                CompletableFuture.completedFuture(10),
+                (x, y) -> System.out.println(x +" "+ y));
+        System.out.println(f.get());        // 无返回值
+    }
+
     //---------------------------------------------------------------
 }
