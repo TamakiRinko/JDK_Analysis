@@ -343,6 +343,7 @@ public class ThreadLocal<T> {
          */
         static class Entry extends WeakReference<ThreadLocal<?>> {
             /** The value associated with this ThreadLocal. */
+            // value没有使用弱引用！
             Object value;
 
             Entry(ThreadLocal<?> k, Object v) {
@@ -515,6 +516,7 @@ public class ThreadLocal<T> {
 
             tab[i] = new Entry(key, value);
             int sz = ++size;
+            // 探究是否有key为null的，有则清除
             if (!cleanSomeSlots(i, sz) && sz >= threshold)
                 rehash();
         }
