@@ -216,11 +216,26 @@ public class ThreadLocal<T> {
      *        this thread-local.
      */
     public void set(T value) {
+    /**
+     * ThreadLocalMap is a customized hash map suitable only for maintaining thread local values.
+     * No operations are exported outside of the ThreadLocal class.
+     * The class is package private to allow declaration of fields in class Thread.
+     * To help deal with very large and long-lived usages,
+     * the hash table entries use WeakReferences for keys.
+     * However, since reference queues are not used,
+     * stale entries are guaranteed to be removed only when the table starts running out of space.
+     */
+        // 每个Thread内部维护一个ThreadLocalMap对象
+        // ThreadLocalMap是ThreadLocal的静态内部类
         Thread t = Thread.currentThread();
+        // 拿到Thread中的ThreadLocalMap
         ThreadLocalMap map = getMap(t);
+
         if (map != null) {
+            // this是当前ThreadLocal对象，为了一个线程中能有多个ThreadLocal对象
             map.set(this, value);
         } else {
+            // t线程中创建map
             createMap(t, value);
         }
     }
