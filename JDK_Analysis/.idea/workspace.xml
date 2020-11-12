@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="ThreadLocal Test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/methodreference/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methodreference/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/ThreadLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/ThreadLocal.java" afterDir="false" />
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Four kinds of Reference Test">
+      <change beforePath="$PROJECT_DIR$/out/production/JDK_Analysis/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JDK_Analysis/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/LogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/WarnHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proxy/WarnService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +227,7 @@
       <workItem from="1605100344448" duration="2424000" />
       <workItem from="1605102795441" duration="2644000" />
       <workItem from="1605149468969" duration="4572000" />
-      <workItem from="1605179719897" duration="7773000" />
+      <workItem from="1605179719897" duration="8144000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -311,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605156555085</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ThreadLocal Test">
+      <created>1605188493124</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605188493124</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Four kinds of Reference Test">
+      <created>1605188530678</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605188530678</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +351,8 @@
     <MESSAGE value="AtomicInteger Test" />
     <MESSAGE value="Singleton Test" />
     <MESSAGE value="ThreadLocal Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="ThreadLocal Test" />
+    <MESSAGE value="Four kinds of Reference Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Four kinds of Reference Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1605100777305">
@@ -363,10 +387,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605156554152">
+    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605188529379">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605156554152" />
+    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605188529379" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -403,10 +427,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605184509234" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605156557345">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605188646687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605156557345" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605188646687" />
     <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604987300374">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
