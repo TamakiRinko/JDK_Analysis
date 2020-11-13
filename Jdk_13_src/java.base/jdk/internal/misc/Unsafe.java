@@ -2336,7 +2336,11 @@ public final class Unsafe {
     public final int getAndAddInt(Object o, long offset, int delta) {
         int v;
         do {
+            // 获取内存偏移地址中的值
             v = getIntVolatile(o, offset);
+            // weakCompareAndSetInt: 更加底层的CAS，native方法
+            // 如果o对象offset处的值是期望的v，则将其置为v+delta
+            // 内存操作，效率高！while循环一直尝试，即自旋锁！
         } while (!weakCompareAndSetInt(o, offset, v, v + delta));
         return v;
     }

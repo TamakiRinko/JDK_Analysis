@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Four kinds of Reference Test">
-      <change beforePath="$PROJECT_DIR$/out/production/JDK_Analysis/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDK_Analysis/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/CglibTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/LogHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/LogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/WarnHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/WarnService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reference/FourReferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reference/FourReferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/concurrent/atomic/AtomicInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/concurrent/atomic/AtomicInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/jdk/internal/misc/Unsafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/jdk/internal/misc/Unsafe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +74,13 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FourReferenceTest">
-    <configuration name="CompletableFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="future.CompletableFutureTest" />
+  <component name="RunManager" selected="Application.CASTest">
+    <configuration name="CASTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cas.CASTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="future.*" />
+          <option name="PATTERN" value="cas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,33 +141,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CompletableFutureTest" />
       <item itemvalue="Application.EnumTest" />
       <item itemvalue="Application.FourReferenceTest" />
       <item itemvalue="Application.ThreadLocalTest" />
       <item itemvalue="Application.WeakReferenceTest" />
+      <item itemvalue="Application.CASTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CASTest" />
         <item itemvalue="Application.FourReferenceTest" />
         <item itemvalue="Application.WeakReferenceTest" />
         <item itemvalue="Application.ThreadLocalTest" />
         <item itemvalue="Application.EnumTest" />
-        <item itemvalue="Application.CompletableFutureTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +217,8 @@
       <workItem from="1605100344448" duration="2424000" />
       <workItem from="1605102795441" duration="2644000" />
       <workItem from="1605149468969" duration="4572000" />
-      <workItem from="1605179719897" duration="8144000" />
+      <workItem from="1605179719897" duration="8276000" />
+      <workItem from="1605235588006" duration="3973000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -403,22 +394,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605103579897" />
-    <state width="1877" height="386" key="GridCell.Tab.0.bottom" timestamp="1605188357717">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom" timestamp="1605240478819">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605188357717" />
-    <state width="1877" height="386" key="GridCell.Tab.0.center" timestamp="1605188357716">
+    <state width="1877" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605240478819" />
+    <state width="1877" height="271" key="GridCell.Tab.0.center" timestamp="1605240478818">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605188357716" />
-    <state width="1877" height="386" key="GridCell.Tab.0.left" timestamp="1605188357716">
+    <state width="1877" height="271" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605240478818" />
+    <state width="1877" height="271" key="GridCell.Tab.0.left" timestamp="1605240478818">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605188357716" />
-    <state width="1877" height="386" key="GridCell.Tab.0.right" timestamp="1605188357717">
+    <state width="1877" height="271" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605240478818" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right" timestamp="1605240478819">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605188357717" />
+    <state width="1877" height="271" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605240478819" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

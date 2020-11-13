@@ -58,9 +58,12 @@ public class AtomicInteger extends Number implements java.io.Serializable {
      * This class intended to be implemented using VarHandles, but there
      * are unresolved cyclic startup dependencies.
      */
+    // 通过unsafe类调用c++ native方法
     private static final jdk.internal.misc.Unsafe U = jdk.internal.misc.Unsafe.getUnsafe();
+    // VALUE: value域在AtomicInteger对象中的内存偏移
     private static final long VALUE = U.objectFieldOffset(AtomicInteger.class, "value");
 
+    // AtomicInteger中整数具体的值
     private volatile int value;
 
     /**
