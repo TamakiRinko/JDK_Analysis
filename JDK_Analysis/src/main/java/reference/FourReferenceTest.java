@@ -33,6 +33,7 @@ public class FourReferenceTest {
         Person person = new Person(1, "123");
         WeakReference<Person> personWeakReference = new WeakReference<>(person, personReferenceQueue);
 
+        // 接入这部分后GC回收了personWeakReference，无论person是否被去除，为何？
         ArrayList<Person> people = new ArrayList<>();
         for (int i = 0; i < 1000000; i++) {
             people.add(new Person(4, i + ""));
