@@ -2,13 +2,15 @@ package cas;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicStampedReference;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class CASTest {
     public static void main(String[] args) {
-        atomicReferenceTest();
+//        atomicReferenceTest();
+        atomicReferenceEqualsTest();
     }
 
     public static void casTest(){
@@ -68,5 +70,17 @@ public class CASTest {
             System.out.println("b2=>"+atomicStampedReference.getStamp());
 
         },"b").start();
+    }
+
+    public static void atomicReferenceEqualsTest(){
+        // CASUser重写了equals方法，比较值
+        CASUser user1 = new CASUser(1, "123");
+        CASUser user2 = new CASUser(1, "123");
+        System.out.println("==: " + (user1 == user2));
+        System.out.println("equals: " + user1.equals(user2));
+        AtomicReference<CASUser> atomicReference = new AtomicReference<>(user1);
+        // AtomicReference使用 == 来进行比较，而不是使用equals!
+        System.out.println(atomicReference.compareAndSet(user2, null));
+        System.out.println(atomicReference.compareAndSet(user1, null));
     }
 }
