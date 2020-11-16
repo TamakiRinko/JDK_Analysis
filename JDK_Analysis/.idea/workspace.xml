@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Lock Test">
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="TemplateMethod Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TemplateMethodTest">
+  <component name="RunManager" selected="Application.ObjectCreateTest">
     <configuration name="CASTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cas.CASTest" />
       <module name="JDK_Analysis" />
@@ -112,19 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateMethodTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpattern.TemplateMethodTest" />
-      <module name="JDK_Analysis" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeakReferenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reference.WeakReferenceTest" />
+    <configuration name="ObjectCreateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jvm.ObjectCreateTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reference.*" />
+          <option name="PATTERN" value="jvm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,33 +125,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="TemplateMethodTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpattern.TemplateMethodTest" />
+      <module name="JDK_Analysis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.FourReferenceTest" />
-      <item itemvalue="Application.WeakReferenceTest" />
       <item itemvalue="Application.CASTest" />
       <item itemvalue="Application.LockTest" />
       <item itemvalue="Application.TemplateMethodTest" />
+      <item itemvalue="Application.ObjectCreateTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObjectCreateTest" />
         <item itemvalue="Application.TemplateMethodTest" />
         <item itemvalue="Application.LockTest" />
         <item itemvalue="Application.CASTest" />
         <item itemvalue="Application.FourReferenceTest" />
-        <item itemvalue="Application.WeakReferenceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +212,8 @@
       <workItem from="1605235588006" duration="4703000" />
       <workItem from="1605278743501" duration="62000" />
       <workItem from="1605318948556" duration="9018000" />
-      <workItem from="1605415587064" duration="3904000" />
+      <workItem from="1605415587064" duration="3979000" />
+      <workItem from="1605488027722" duration="2030000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -349,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605328265675</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="TemplateMethod Test">
+      <created>1605425552586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605425552586</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +375,8 @@
     <MESSAGE value="Four kinds of Reference Test" />
     <MESSAGE value="CAS Test" />
     <MESSAGE value="Lock Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lock Test" />
+    <MESSAGE value="TemplateMethod Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="TemplateMethod Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1605100777305">
@@ -404,10 +411,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605328264843">
+    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605425551784">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605328264843" />
+    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605425551784" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -420,22 +427,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605103579897" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1605420550014">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1605425589015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605420550014" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1605420550014">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605425589015" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1605425589015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605420550014" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1605420550014">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605425589015" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1605425589015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605420550014" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1605420550014">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605425589015" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1605425589015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605420550014" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605425589015" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605328304580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -460,10 +467,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605320700413" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605328271354">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605425555444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605328271354" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605425555444" />
     <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604987300374">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -476,9 +483,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1605103582206" />
-    <state x="623" y="227" key="search.everywhere.popup" timestamp="1604981543243">
+    <state x="623" y="227" key="search.everywhere.popup" timestamp="1605488434085">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604981543243" />
+    <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605488434085" />
   </component>
 </project>
