@@ -1807,6 +1807,7 @@ public final class Class<T> implements java.io.Serializable,
      * @jls 8.3 Field Declarations
      */
     @CallerSensitive
+    // 只能拿到公有域，且不保证获得的Fields的顺序！但可以拿到父类的公有域
     public Field[] getFields() throws SecurityException {
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {
@@ -2241,6 +2242,7 @@ public final class Class<T> implements java.io.Serializable,
      * @jls 8.3 Field Declarations
      */
     @CallerSensitive
+    // 能拿到所有的域，但继承自父类的域不会被拿到，需要递归拿！
     public Field[] getDeclaredFields() throws SecurityException {
         SecurityManager sm = System.getSecurityManager();
         if (sm != null) {

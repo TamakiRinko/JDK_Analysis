@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="ObjectLayout Test, currently failed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/ObjectLayoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JDK_Analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JDK_Analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/Class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -64,10 +63,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -75,13 +74,13 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ObjectLayoutTest">
-    <configuration name="CASTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cas.CASTest" />
+  <component name="RunManager" selected="Application.AutowiredTest">
+    <configuration name="AutowiredTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring.overview.AutowiredTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cas.*" />
+          <option name="PATTERN" value="spring.overview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,6 +127,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SetInjectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring.overview.SetInjectionTest" />
+      <module name="JDK_Analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring.overview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TemplateMethodTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="designpattern.TemplateMethodTest" />
       <module name="JDK_Analysis" />
@@ -135,30 +147,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.ObjectLayoutTest" />
-      <item itemvalue="Application.CASTest" />
       <item itemvalue="Application.LockTest" />
       <item itemvalue="Application.TemplateMethodTest" />
       <item itemvalue="Application.ObjectCreateTest" />
+      <item itemvalue="Application.SetInjectionTest" />
+      <item itemvalue="Application.AutowiredTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutowiredTest" />
+        <item itemvalue="Application.SetInjectionTest" />
         <item itemvalue="Application.ObjectCreateTest" />
         <item itemvalue="Application.TemplateMethodTest" />
         <item itemvalue="Application.LockTest" />
-        <item itemvalue="Application.CASTest" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +234,8 @@
       <workItem from="1605488027722" duration="2092000" />
       <workItem from="1605494160272" duration="4266000" />
       <workItem from="1605514336295" duration="69000" />
-      <workItem from="1605622295535" duration="1246000" />
+      <workItem from="1605622295535" duration="1339000" />
+      <workItem from="1605662999382" duration="4347000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -374,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605494974087</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ObjectLayout Test, currently failed">
+      <created>1605625009670</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1605625009670</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605495804553" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1605420374553">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1605664035580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1605420374553" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1605664035580" />
     <state x="582" y="206" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604823943817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -433,10 +457,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605624984778">
+    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605625016931">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605624984778" />
+    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605625016931" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -449,46 +473,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605103579897" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1605498695875">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1605665994397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1605498695875">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994397" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1605665994396">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1605498695875">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1605665994396">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1605498695875">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1605665994396">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605498695875">
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605664121924">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605498695875">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605664121924">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605498695875">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605664121924">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605498695875">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605664121924">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605498695875" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="463" y="170" key="SettingsEditor" timestamp="1605320700413">
+    <state x="650" y="198" key="SettingsEditor" timestamp="1605665568686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="463" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605320700413" />
+    <state x="650" y="198" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605665568686" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605624989263">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
