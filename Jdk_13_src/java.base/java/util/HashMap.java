@@ -388,6 +388,10 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * (We also tolerate length zero in some operations to allow
      * bootstrapping mechanics that are currently not needed.)
      */
+    //        final int hash;
+    //        final K key;
+    //        V value;
+    //        Node<K,V> next;
     transient Node<K,V>[] table;
 
     /**
@@ -628,6 +632,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         if ((tab = table) == null || (n = tab.length) == 0)
             n = (tab = resize()).length;
         if ((p = tab[i = (n - 1) & hash]) == null)
+            // 桶中为空
             tab[i] = newNode(hash, key, value, null);
         else {
             Node<K,V> e; K k;
@@ -641,6 +646,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
                     if ((e = p.next) == null) {
                         p.next = newNode(hash, key, value, null);
                         if (binCount >= TREEIFY_THRESHOLD - 1) // -1 for 1st
+                            // 二叉树化
                             treeifyBin(tab, hash);
                         break;
                     }
@@ -660,6 +666,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         }
         ++modCount;
         if (++size > threshold)
+            // 扩容，threshold=loadfactor * table.length
             resize();
         afterNodeInsertion(evict);
         return null;
@@ -678,32 +685,40 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         Node<K,V>[] oldTab = table;
         int oldCap = (oldTab == null) ? 0 : oldTab.length;
         int oldThr = threshold;
+        // newCapacity newThreshold
         int newCap, newThr = 0;
+        /*如果旧表的长度不是空*/
         if (oldCap > 0) {
             if (oldCap >= MAXIMUM_CAPACITY) {
+                // 到达1<30，变为0x7fffffff
                 threshold = Integer.MAX_VALUE;
                 return oldTab;
             }
             else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
                      oldCap >= DEFAULT_INITIAL_CAPACITY)
+                /*把新表的长度设置为旧表长度的两倍，newCap=2*oldCap*/
                 newThr = oldThr << 1; // double threshold
         }
         else if (oldThr > 0) // initial capacity was placed in threshold
             newCap = oldThr;
+        // 默认初始化
         else {               // zero initial threshold signifies using defaults
             newCap = DEFAULT_INITIAL_CAPACITY;
             newThr = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
         }
+        // 计算新表的threshold
         if (newThr == 0) {
             float ft = (float)newCap * loadFactor;
             newThr = (newCap < MAXIMUM_CAPACITY && ft < (float)MAXIMUM_CAPACITY ?
                       (int)ft : Integer.MAX_VALUE);
         }
         threshold = newThr;
+        // 开始构造新表
         @SuppressWarnings({"rawtypes","unchecked"})
         Node<K,V>[] newTab = (Node<K,V>[])new Node[newCap];
         table = newTab;
         if (oldTab != null) {
+            // 遍历旧表
             for (int j = 0; j < oldCap; ++j) {
                 Node<K,V> e;
                 if ((e = oldTab[j]) != null) {
@@ -716,9 +731,15 @@ public class HashMap<K,V> extends AbstractMap<K,V>
                         Node<K,V> loHead = null, loTail = null;
                         Node<K,V> hiHead = null, hiTail = null;
                         Node<K,V> next;
+                        // 新表是旧表的两倍容量，实例上就把单链表拆分为两队
                         do {
                             next = e.next;
+                            // 本来oldCap为16，现在变为32，
+                            // 15(001111)和31(011111)与hash值模完多保留了第5位，
+                            // 所以扩容后之前的元素要不在原来的桶，要不在原来桶两倍位置的桶里
+                            // 此时只要判断oldCap(16: 010000)与hash的值即可知道在哪个桶了!
                             if ((e.hash & oldCap) == 0) {
+                                // 尾插法，JDK8前为头插法
                                 if (loTail == null)
                                     loHead = e;
                                 else
@@ -739,7 +760,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
                         }
                         if (hiTail != null) {
                             hiTail.next = null;
-                            newTab[j + oldCap] = hiHead;
+                            newTab[j + oldCap] = hiHead;  // 放在j + oldCap位置
                         }
                     }
                 }
@@ -759,6 +780,12 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         else if ((e = tab[index = (n - 1) & hash]) != null) {
             TreeNode<K,V> hd = null, tl = null;
             do {
+                // 构建相应的TreeNode结点
+                // TreeNode<K,V> parent;  // red-black tree links
+                // TreeNode<K,V> left;
+                // TreeNode<K,V> right;
+                // TreeNode<K,V> prev;    // needed to unlink next upon deletion
+                // boolean red;
                 TreeNode<K,V> p = replacementTreeNode(e, null);
                 if (tl == null)
                     hd = p;
@@ -769,6 +796,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
                 tl = p;
             } while ((e = e.next) != null);
             if ((tab[index] = hd) != null)
+                // 树化
                 hd.treeify(tab);
         }
     }

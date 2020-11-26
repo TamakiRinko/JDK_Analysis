@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="ObjectLayout Test, currently failed">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Spring Core Injection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/lang/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK_Analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JDK_Analysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stream/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/ExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +62,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cglib-RELEASE_3_3_0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-5.2.10/spring-expression-5.2.10.RELEASE-sources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -74,7 +77,7 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AutowiredTest">
+  <component name="RunManager" selected="Application.HashMapTest">
     <configuration name="AutowiredTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring.overview.AutowiredTest" />
       <module name="JDK_Analysis" />
@@ -88,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.LockTest" />
+    <configuration name="HashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hashmap.HashMapTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.*" />
+          <option name="PATTERN" value="hashmap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,34 +150,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ObjectLayoutTest" />
-      <item itemvalue="Application.LockTest" />
       <item itemvalue="Application.TemplateMethodTest" />
       <item itemvalue="Application.ObjectCreateTest" />
       <item itemvalue="Application.SetInjectionTest" />
       <item itemvalue="Application.AutowiredTest" />
+      <item itemvalue="Application.HashMapTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMapTest" />
         <item itemvalue="Application.AutowiredTest" />
         <item itemvalue="Application.SetInjectionTest" />
         <item itemvalue="Application.ObjectCreateTest" />
         <item itemvalue="Application.TemplateMethodTest" />
-        <item itemvalue="Application.LockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +225,13 @@
       <workItem from="1605494160272" duration="4266000" />
       <workItem from="1605514336295" duration="69000" />
       <workItem from="1605622295535" duration="1339000" />
-      <workItem from="1605662999382" duration="4347000" />
+      <workItem from="1605662999382" duration="5262000" />
+      <workItem from="1605688392944" duration="2127000" />
+      <workItem from="1605963065021" duration="1191000" />
+      <workItem from="1605964268197" duration="3145000" />
+      <workItem from="1606055444718" duration="1173000" />
+      <workItem from="1606372908119" duration="5697000" />
+      <workItem from="1606384599540" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -398,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605625009670</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Spring Core Injection">
+      <created>1605667631985</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1605667631985</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +425,8 @@
     <MESSAGE value="Object Create Test" />
     <MESSAGE value="ReentrantLock Test" />
     <MESSAGE value="ObjectLayout Test, currently failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="ObjectLayout Test, currently failed" />
+    <MESSAGE value="Spring Core Injection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Core Injection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1605100777305">
@@ -445,10 +449,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="582" y="206" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604823943817" />
-    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1604827903162">
+    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1605965531892">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604827903162" />
+    <state x="813" y="309" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605965531892" />
     <state x="389" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604830585970">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -457,10 +461,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605625016931">
+    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605684586785">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605625016931" />
+    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605684586785" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -469,54 +473,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604818358075" />
-    <state x="763" y="350" key="FileChooserDialogImpl" timestamp="1605103579897">
+    <state x="113" y="329" key="FileChooserDialogImpl" timestamp="1605965529579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="763" y="350" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605103579897" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1605665994397">
+    <state x="113" y="329" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605965529579" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1606373302851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994397" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1605665994396">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1606373302851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1605665994396">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1606373302851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1605665994396">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1606373302851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605665994396" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605664121924">
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605684589363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605664121924">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605684589363" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605684589363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605664121924">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605684589363" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605684589363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605664121924">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605684589363" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605684589363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605664121924" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605684589363" />
     <state x="614" y="234" key="NewModule_or_Project.wizard" timestamp="1600347632232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="614" y="234" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600347632232" />
-    <state x="650" y="198" key="SettingsEditor" timestamp="1605665568686">
+    <state x="650" y="198" key="SettingsEditor" timestamp="1605965534761">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="650" y="198" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605665568686" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605624989263">
+    <state x="650" y="198" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605965534761" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1605667636344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605624989263" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605667636344" />
     <state width="1918" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604987300374">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -529,9 +533,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="334" y="229" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1605103582206" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605624598975">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606055674820">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605624598975" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606055674820" />
   </component>
 </project>
