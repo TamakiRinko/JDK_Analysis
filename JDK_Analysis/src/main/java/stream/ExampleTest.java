@@ -1,8 +1,11 @@
 package stream;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class ExampleTest {
@@ -40,5 +43,14 @@ public class ExampleTest {
                 // 非终结的forEach
                 .peek(user -> user.setName(user.getName().toUpperCase()))
                 .forEach(System.out::println);
+    }
+
+    public static List<Integer> sort(int[] sourceArray){
+        // 对 arr 进行拷贝，不改变参数内容
+        List<Integer> arr = Arrays.stream(sourceArray).boxed().collect(Collectors.toList());
+        // Arrays.stream(sourceArray)返回的是IntStream，必须boxed返回stream
+        Arrays.stream(sourceArray).boxed().collect(Collectors.toList());
+        Stream.of(sourceArray).collect(Collectors.toList());
+        return new ArrayList<>();
     }
 }
