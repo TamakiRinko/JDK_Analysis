@@ -30,21 +30,21 @@ import org.springframework.lang.Nullable;
  *
  * <p>This interface is implemented by objects that hold a number of bean definitions,
  * each uniquely identified by a String name. Depending on the bean definition,
- * the factory will return either an independent instance of a contained object
+ * the factory will return either an independent instance of a contained object		原型模式
  * (the Prototype design pattern), or a single shared instance (a superior
- * alternative to the Singleton design pattern, in which the instance is a
- * singleton in the scope of the factory). Which type of instance will be returned
+ * alternative to the Singleton design pattern, in which the instance is a			比单例模式更优的选择
+ * singleton in the scope of the factory). Which type of instance will be returned	在factory的作用域内为单例
  * depends on the bean factory configuration: the API is the same. Since Spring
  * 2.0, further scopes are available depending on the concrete application
- * context (e.g. "request" and "session" scopes in a web environment).
+ * context (e.g. "request" and "session" scopes in a web environment).				特殊作用域，在request作用域内存活
  *
  * <p>The point of this approach is that the BeanFactory is a central registry
- * of application components, and centralizes configuration of application
+ * of application components, and centralizes configuration of application			应用组件的中心化配置点
  * components (no more do individual objects need to read properties files,
  * for example). See chapters 4 and 11 of "Expert One-on-One J2EE Design and
  * Development" for a discussion of the benefits of this approach.
  *
- * <p>Note that it is generally better to rely on Dependency Injection
+ * <p>Note that it is generally better to rely on Dependency Injection	依赖注入
  * ("push" configuration) to configure application objects through setters
  * or constructors, rather than use any form of "pull" configuration like a
  * BeanFactory lookup. Spring's Dependency Injection functionality is
@@ -58,6 +58,7 @@ import org.springframework.lang.Nullable;
  * properties file, etc. Implementations are encouraged to support references
  * amongst beans (Dependency Injection).
  *
+ * 如果同时继承了ListableBeanFactory和HierarchicalBeanFactory，则ListableBeanFactory迭代Bean时也会迭代父容器里的Bean
  * <p>In contrast to the methods in {@link ListableBeanFactory}, all of the
  * operations in this interface will also check parent factories if this is a
  * {@link HierarchicalBeanFactory}. If a bean is not found in this factory instance,

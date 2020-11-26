@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Spring Core Injection">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JDK_Analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JDK_Analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stream/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/ExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,6 +238,7 @@
       <workItem from="1606055444718" duration="1173000" />
       <workItem from="1606372908119" duration="5697000" />
       <workItem from="1606384599540" duration="13000" />
+      <workItem from="1606395888465" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -412,7 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605667631985</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="HashMap Test">
+      <created>1606395993105</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606395993105</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Stream Test">
+      <created>1606396196180</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396196180</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +447,9 @@
     <MESSAGE value="ReentrantLock Test" />
     <MESSAGE value="ObjectLayout Test, currently failed" />
     <MESSAGE value="Spring Core Injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Core Injection" />
+    <MESSAGE value="HashMap Test" />
+    <MESSAGE value="Stream Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stream Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1605100777305">
