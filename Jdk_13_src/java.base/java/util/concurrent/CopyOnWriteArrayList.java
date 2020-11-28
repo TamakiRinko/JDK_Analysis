@@ -432,6 +432,7 @@ public class CopyOnWriteArrayList<E>
             int len = es.length;
             es = Arrays.copyOf(es, len + 1);
             es[len] = e;
+            // array = es;
             setArray(es);
             return true;
         }

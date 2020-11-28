@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="Spring Core Injection">
-      <change beforePath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-5.2.10/spring-beans-5.2.10.RELEASE-sources/org/springframework/beans/factory/BeanFactory.java" afterDir="false" />
+    <list default="true" id="2c214471-a1fb-4732-a855-3a42ec8a01f6" name="默认更改列表" comment="BeanFactory Test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hashmap/HashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collections/HashMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/Hashtable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/concurrent/CopyOnWriteArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk_13_src/java.base/java/util/concurrent/CopyOnWriteArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
       <recent name="methodreference" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HashMapTest">
+  <component name="RunManager" selected="Application.HashtableTest">
     <configuration name="AutowiredTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring.overview.AutowiredTest" />
       <module name="JDK_Analysis" />
@@ -87,11 +91,24 @@
       </method>
     </configuration>
     <configuration name="HashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hashmap.HashMapTest" />
+      <option name="MAIN_CLASS_NAME" value="collections.HashMapTest" />
       <module name="JDK_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hashmap.*" />
+          <option name="PATTERN" value="collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashtableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.HashtableTest" />
+      <module name="JDK_Analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,39 +155,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateMethodTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpattern.TemplateMethodTest" />
-      <module name="JDK_Analysis" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ObjectLayoutTest" />
-      <item itemvalue="Application.TemplateMethodTest" />
       <item itemvalue="Application.ObjectCreateTest" />
       <item itemvalue="Application.SetInjectionTest" />
       <item itemvalue="Application.AutowiredTest" />
       <item itemvalue="Application.HashMapTest" />
+      <item itemvalue="Application.HashtableTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashtableTest" />
         <item itemvalue="Application.HashMapTest" />
         <item itemvalue="Application.AutowiredTest" />
         <item itemvalue="Application.SetInjectionTest" />
         <item itemvalue="Application.ObjectCreateTest" />
-        <item itemvalue="Application.TemplateMethodTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +237,8 @@
       <workItem from="1606055444718" duration="1173000" />
       <workItem from="1606372908119" duration="5697000" />
       <workItem from="1606384599540" duration="13000" />
-      <workItem from="1606395888465" duration="306000" />
+      <workItem from="1606395888465" duration="3611000" />
+      <workItem from="1606553692458" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="StreamExample Test">
       <created>1604980123673</created>
@@ -422,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606396196180</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="BeanFactory Test">
+      <created>1606396207579</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396207579</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +456,8 @@
     <MESSAGE value="Spring Core Injection" />
     <MESSAGE value="HashMap Test" />
     <MESSAGE value="Stream Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stream Test" />
+    <MESSAGE value="BeanFactory Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="BeanFactory Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="203" key="#Inspections" timestamp="1605100777305">
@@ -484,10 +492,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="186" key="#项目结构/0.0.1920.1050@0.0.1920.1050" timestamp="1600346791699" />
-    <state x="903" y="60" key="CommitChangelistDialog2" timestamp="1605684586785">
+    <state x="718" y="60" key="CommitChangelistDialog2" timestamp="1606553732420">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="903" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605684586785" />
+    <state x="718" y="60" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606553732420" />
     <state x="730" y="310" key="DetectedRootsChooserDialog" timestamp="1604827895587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -500,22 +508,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="113" y="329" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605965529579" />
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1606373302851">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1606399519440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
-    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1606373302851">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606399519440" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1606399519440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
-    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1606373302851">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606399519440" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1606399519440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
-    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1606373302851">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606399519440" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1606399519440">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606373302851" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606399519440" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605684589363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

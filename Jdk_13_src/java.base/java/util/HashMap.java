@@ -99,7 +99,7 @@ import jdk.internal.access.SharedSecrets;
  * method.  This is best done at creation time, to prevent accidental
  * unsynchronized access to the map:<pre>
  *   Map m = Collections.synchronizedMap(new HashMap(...));</pre>
- *
+ *  // 快速失败机制
  * <p>The iterators returned by all of this class's "collection view methods"
  * are <i>fail-fast</i>: if the map is structurally modified at any time after
  * the iterator is created, in any way except through the iterator's own
@@ -108,9 +108,9 @@ import jdk.internal.access.SharedSecrets;
  * modification, the iterator fails quickly and cleanly, rather than risking
  * arbitrary, non-deterministic behavior at an undetermined time in the
  * future.
- *
+ *  fail-fast形为无法被保证，故不应该依赖这个异常进行逻辑处理
  * <p>Note that the fail-fast behavior of an iterator cannot be guaranteed
- * as it is, generally speaking, impossible to make any hard guarantees in the
+ * as(由于) it is, generally speaking, impossible to make any hard guarantees in the
  * presence of unsynchronized concurrent modification.  Fail-fast iterators
  * throw {@code ConcurrentModificationException} on a best-effort basis.
  * Therefore, it would be wrong to write a program that depended on this

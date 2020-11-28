@@ -408,6 +408,7 @@ public class Hashtable<K,V>
         Entry<?,?>[] oldMap = table;
 
         // overflow-conscious code
+        // old * 2 + 1，扩容
         int newCapacity = (oldCapacity << 1) + 1;
         if (newCapacity - MAX_ARRAY_SIZE > 0) {
             if (oldCapacity == MAX_ARRAY_SIZE)
@@ -420,7 +421,7 @@ public class Hashtable<K,V>
         modCount++;
         threshold = (int)Math.min(newCapacity * loadFactor, MAX_ARRAY_SIZE + 1);
         table = newMap;
-
+        // 重新放入新的entry中
         for (int i = oldCapacity ; i-- > 0 ;) {
             for (Entry<K,V> old = (Entry<K,V>)oldMap[i] ; old != null ; ) {
                 Entry<K,V> e = old;
@@ -446,6 +447,7 @@ public class Hashtable<K,V>
 
         // Creates the new entry.
         @SuppressWarnings("unchecked")
+        // 头插法
         Entry<K,V> e = (Entry<K,V>) tab[index];
         tab[index] = new Entry<>(hash, key, value, e);
         count++;
@@ -470,13 +472,14 @@ public class Hashtable<K,V>
      * @see     #get(Object)
      */
     public synchronized V put(K key, V value) {
-        // Make sure the value is not null
+        // Make sure the value is not null  不允许value为null
         if (value == null) {
             throw new NullPointerException();
         }
 
         // Makes sure the key is not already in the hashtable.
         Entry<?,?> tab[] = table;
+        // 不允许key为null
         int hash = key.hashCode();
         int index = (hash & 0x7FFFFFFF) % tab.length;
         @SuppressWarnings("unchecked")
